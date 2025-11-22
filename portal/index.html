@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- ============================================== -->
+    <!-- META TAGS BÁSICAS -->
+    <!-- ============================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra o Truco da Gelatina para perder peso">
+    <title>Truco de la gelatina - nurapp store</title>
+
+    <!-- ============================================== -->
+    <!-- GOOGLE TAG MANAGER - COLE O CÓDIGO AQUI -->
+    <!-- Instruções: Substitua GTM-XXXXXXX pelo seu ID -->
+    <!-- ============================================== -->
+    <!-- Google Tag Manager -->
+    <script>
+    // (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    // new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    // j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    // 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    // })(window,document,'script','dataLayer','GTM-XXXXXXX');
+    </script>
+    <!-- Fim Google Tag Manager -->
+
+    <!-- ============================================== -->
+    <!-- PIXEL DO FACEBOOK - COLE O CÓDIGO AQUI -->
+    <!-- Instruções: Substitua SEU_PIXEL_ID pelo seu ID do Pixel -->
+    <!-- ============================================== -->
+    <!-- Facebook Pixel Code -->
+    <script>
+    // !function(f,b,e,v,n,t,s)
+    // {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    // if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    // n.queue=[];t=b.createElement(e);t.async=!0;
+    // t.src=v;s=b.getElementsByTagName(e)[0];
+    // s.parentNode.insertBefore(t,s)}(window, document,'script',
+    // 'https://connect.facebook.net/en_US/fbevents.js');
+    // fbq('init', 'SEU_PIXEL_ID');
+    // fbq('track', 'PageView');
+    </script>
+    <!-- Fim Facebook Pixel Code -->
+
+    <!-- ============================================== -->
+    <!-- UTMIFY - COLE O CÓDIGO AQUI -->
+    <!-- Instruções: Substitua pelo código fornecido pela UTMify -->
+    <!-- ============================================== -->
+    <script>
+    // Cole aqui o script da UTMify
+    // Exemplo:
+    // (function(u,t,m,i,f,y){...})(window,document,'script','utmify');
+    </script>
+    <!-- Fim UTMify -->
+
+    <!-- ============================================== -->
+    <!-- ESTILOS CSS INLINE -->
+    <!-- ============================================== -->
+    <style>
+        /* ============================================== */
+        /* RESET E CONFIGURAÇÕES GLOBAIS */
+        /* ============================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fonte padrão do corpo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* ============================================== */
+        /* CONTAINER PRINCIPAL */
+        /* Limita a largura máxima e centraliza o conteúdo */
+        /* ============================================== */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        /* ============================================== */
+        /* SEÇÃO DO HEADER/HEADLINE */
+        /* Texto acima do vídeo com fundo branco */
+        /* ============================================== */
+        .header-section {
+            background-color: #ffffff;
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        /* Texto "REVELADO:" em destaque */
+        .header-section .revelado {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Título principal da headline */
+        .header-section .headline {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+
+        /* Texto em vermelho destacando benefício */
+        .header-section .headline .destaque {
+            color: #e53935;
+            font-weight: bold;
+        }
+
+        /* Subtítulo pequeno abaixo da headline */
+        .header-section .subtitulo {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* ============================================== */
+        /* SEÇÃO DO VÍDEO */
+        /* Container do player de vídeo (VTurb) */
+        /* ============================================== */
+        .video-section {
+            position: relative;
+            width: 100%;
+            background-color: #ffffff; /* Fundo branco igual ao resto da página */
+            padding: 0 15px 15px 15px; /* Espaço lateral e embaixo */
+        }
+
+        /* Container com o contorno NEON VERMELHO LEVE */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            /* Borda vermelha neon leve */
+            border: 2px solid #e53935;
+            border-radius: 4px;
+            /* Efeito NEON LEVE - apenas para demarcar */
+            box-shadow: 
+                0 0 5px rgba(229, 57, 53, 0.5),
+                0 0 10px rgba(229, 57, 53, 0.3),
+                0 0 15px rgba(229, 57, 53, 0.1);
+        }
+
+        /* Container responsivo para o vídeo - mantém proporção 16:9 */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* Iframe/embed do vídeo ocupa todo o container */
+        .video-container iframe,
+        .video-container embed,
+        .video-container object,
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Overlay com texto "Ya has empezado a ver este vídeo" */
+        /* Este overlay aparece sobre o vídeo */
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(139, 0, 0, 0.85); /* Vermelho translúcido */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            /* NOTA: Remova ou oculte este overlay quando o vídeo do VTurb estiver configurado */
+            display: none; /* Oculto por padrão - descomente para mostrar */
+        }
+
+        /* Texto do overlay */
+        .video-overlay h2 {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        /* Container dos botões do overlay */
+        .video-overlay .buttons {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Botões do overlay (Continuar viendo / Mirar desde el principio) */
+        .video-overlay .btn-overlay {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .video-overlay .btn-overlay:hover {
+            opacity: 0.8;
+        }
+
+        /* Ícones dos botões */
+        .video-overlay .btn-overlay .icon {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ============================================== */
+        /* ESTILOS DO VÍDEO VTURB - Já configurado */
+        /* O vídeo usa padding-top para manter proporção 16:9 */
+        /* ============================================== */
+
+        /* ============================================== */
+        /* SEÇÃO DE COMENTÁRIOS */
+        /* Lista de comentários abaixo do vídeo */
+        /* ============================================== */
+        .comments-section {
+            background-color: #ffffff;
+            padding: 20px 15px;
+        }
+
+        /* Contador de comentários */
+        .comments-count {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        /* Lista de comentários */
+        .comments-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* ============================================== */
+        /* ESTRUTURA DE CADA COMENTÁRIO */
+        /* ============================================== */
+        .comment {
+            display: flex;
+            gap: 12px;
+        }
+
+        /* Avatar do usuário - foto circular */
+        .comment-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        /* Imagem dentro do avatar */
+        .comment-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Placeholder colorido para avatares sem imagem */
+        .comment-avatar.avatar-1 { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .comment-avatar.avatar-2 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .comment-avatar.avatar-3 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .comment-avatar.avatar-4 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .comment-avatar.avatar-5 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+        .comment-avatar.avatar-6 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); }
+        .comment-avatar.avatar-7 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); }
+        .comment-avatar.avatar-8 { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+
+        /* Corpo/conteúdo do comentário */
+        .comment-body {
+            flex: 1;
+        }
+
+        /* Cabeçalho do comentário (nome + tempo) */
+        .comment-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 5px;
+        }
+
+        /* Nome do usuário */
+        .comment-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #385898; /* Azul estilo Facebook */
+        }
+
+        /* Tempo do comentário (ex: "35 min") */
+        .comment-time {
+            font-size: 12px;
+            color: #90949c;
+        }
+
+        /* Texto do comentário */
+        .comment-text {
+            font-size: 14px;
+            color: #1c1e21;
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        /* Ações do comentário (Me Gusta, Comentar, Compartir) */
+        .comment-actions {
+            display: flex;
+            gap: 15px;
+            font-size: 12px;
+            color: #90949c;
+        }
+
+        .comment-actions span {
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .comment-actions span:hover {
+            color: #385898;
+            text-decoration: underline;
+        }
+
+        /* ============================================== */
+        /* RESPOSTAS A COMENTÁRIOS (COMENTÁRIOS ANINHADOS) */
+        /* ============================================== */
+        .comment-replies {
+            margin-top: 15px;
+            margin-left: 20px;
+            padding-left: 15px;
+            border-left: 2px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Resposta individual */
+        .reply {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Avatar menor para respostas */
+        .reply .comment-avatar {
+            width: 32px;
+            height: 32px;
+        }
+
+        /* ============================================== */
+        /* RESPONSIVIDADE - AJUSTES PARA MOBILE */
+        /* ============================================== */
+        @media (max-width: 600px) {
+            /* Reduz tamanho da headline em mobile */
+            .header-section .revelado {
+                font-size: 16px;
+            }
+
+            .header-section .headline {
+                font-size: 16px;
+                padding: 0 10px;
+            }
+
+            /* Ajusta padding dos comentários */
+            .comments-section {
+                padding: 15px 12px;
+            }
+
+            /* Avatar menor em mobile */
+            .comment-avatar {
+                width: 36px;
+                height: 36px;
+            }
+
+            /* Texto do comentário menor */
+            .comment-text {
+                font-size: 13px;
+            }
+
+            /* Respostas com menos margem */
+            .comment-replies {
+                margin-left: 10px;
+                padding-left: 10px;
+            }
+        }
+
+        /* ============================================== */
+        /* ESTILOS REMOVIDOS - Modal não é mais usado */
+        /* Apenas back redirect está ativo */
+        /* ============================================== */
+    </style>
+</head>
+<body>
+    <!-- ============================================== -->
+    <!-- GOOGLE TAG MANAGER (NOSCRIPT) -->
+    <!-- Cole após a abertura da tag <body> -->
+    <!-- ============================================== -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <!-- <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe> -->
+    </noscript>
+    <!-- Fim Google Tag Manager (noscript) -->
+
+    <!-- ============================================== -->
+    <!-- FACEBOOK PIXEL (NOSCRIPT) -->
+    <!-- Fallback para quando JavaScript está desabilitado -->
+    <!-- ============================================== -->
+    <noscript>
+        <!-- <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/> -->
+    </noscript>
+
+    <!-- ============================================== -->
+    <!-- CONTAINER PRINCIPAL DA PÁGINA -->
+    <!-- ============================================== -->
+    <div class="container">
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO DO HEADER/HEADLINE -->
+        <!-- Altere os textos conforme necessário -->
+        <!-- ============================================== -->
+        <header class="header-section">
+            <!-- Texto "REVELADO:" -->
+            <p class="revelado">REVELADO:</p>
+            
+            <!-- Headline principal - ALTERE O TEXTO AQUI -->
+            <!-- Linha 1: Este es el Nuevo Truco que las Celebridades y -->
+            <!-- Linha 2: Famosas están Usando para Perder 10 Kilos en -->
+            <!-- Linha 3: Solo 2 Semanas! -->
+            <h1 class="headline">
+                Este es el Nuevo Truco que las Celebridades y<br>
+                Famosas están Usando para <span class="destaque">Perder 10 Kilos en<br>
+                Solo 2 Semanas!</span>
+            </h1>
+            
+            <!-- Subtítulo/aviso pequeno -->
+            <p class="subtitulo">( ¡No comas más de una porción al día! )</p>
+        </header>
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO DO VÍDEO -->
+        <!-- Vídeo responsivo com borda neon vermelha leve -->
+        <!-- ============================================== -->
+        <section class="video-section">
+            
+            <!-- ============================================== -->
+            <!-- WRAPPER COM CONTORNO NEON VERMELHO LEVE -->
+            <!-- Este div cria a borda neon ao redor do vídeo -->
+            <!-- ============================================== -->
+            <div class="video-wrapper">
+            
+                <!-- ============================================== -->
+                <!-- CÓDIGO DO VTURB -->
+                <!-- Para trocar o vídeo, substitua o código abaixo -->
+                <!-- ============================================== -->
+               <vturb-smartplayer id="vid-6921182ce478a90f43ad3ecf" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/a74b87d4-c40b-40d0-90db-c7f5485873a8/players/6921182ce478a90f43ad3ecf/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
+                <!-- ============================================== -->
+                <!-- FIM - CÓDIGO DO VTURB -->
+                <!-- ============================================== -->
+
+            </div>
+            <!-- FIM DO WRAPPER COM CONTORNO NEON -->
+
+        </section>
+
+        <!-- ============================================== -->
+        <!-- SEÇÃO DE COMENTÁRIOS -->
+        <!-- Comentários estilo Facebook/redes sociais -->
+        <!-- ============================================== -->
+        <section class="comments-section">
+            
+            <!-- Contador de comentários - ALTERE O NÚMERO SE NECESSÁRIO -->
+            <div class="comments-count">5.342 Comentarios</div>
+
+            <!-- Lista de todos os comentários -->
+            <div class="comments-list">
+
+                <!-- ============================================== -->
+                <!-- COMENTÁRIO 1 - Leticia Ramirez -->
+                <!-- Para trocar a foto: substitua o src="img/avatar1.jpg" pelo caminho da sua imagem -->
+                <!-- ============================================== -->
+                <div class="comment">
+                    <!-- Avatar do usuário - TROQUE A IMAGEM AQUI -->
+                    <div class="comment-avatar">
+                        <!-- Substitua "img/avatar1.jpg" pelo caminho da foto -->
+                        <img src="img/avatar1.png" alt="Leticia Ramirez" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-1');">
+                    </div>
+                    
+                    <!-- Corpo do comentário -->
+                    <div class="comment-body">
+                        <!-- Nome e tempo -->
+                        <div class="comment-header">
+                            <span class="comment-name">Leticia Ramirez</span>
+                            <span class="comment-time">· 35 min</span>
+                        </div>
+                        
+                        <!-- Texto do comentário -->
+                        <p class="comment-text">
+                            Empecé a hacerlo a comienzos del mes pasado y desde entonces he logrado perder 12 kilos. Realmente es muy bueno y fácil, el único problema es que la gente de verdad piensa que te hiciste alguna cirugía o que estás usando Ozempic jajaja.
+                        </p>
+                        
+                        <!-- Ações (curtir, comentar, compartilhar) -->
+                        <div class="comment-actions">
+                            <span>Me Gusta</span>
+                            <span>Comentar</span>
+                            <span>Compartir</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================== -->
+                <!-- COMENTÁRIO 2 - Verónica Sánchez -->
+                <!-- Para trocar a foto: substitua o src="img/avatar2.jpg" pelo caminho da sua imagem -->
+                <!-- ============================================== -->
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <!-- Substitua "img/avatar2.jpg" pelo caminho da foto -->
+                        <img src="img/avatar2.jpg" alt="Verónica Sánchez" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-2');">
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-header">
+                            <span class="comment-name">Verónica Sánchez</span>
+                            <span class="comment-time">· 44 min</span>
+                        </div>
+                        <p class="comment-text">
+                            Wow, la receta es súper simple y fácil. Esto debería divulgarse en todo el mundo, porque yo gasté muchísimo dinero en nutricionistas y no me sirvió de nada. ¡Mis felicitaciones para ustedes!
+                        </p>
+                        <div class="comment-actions">
+                            <span>Me Gusta</span>
+                            <span>Comentar</span>
+                            <span>Compartir</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================== -->
+                <!-- COMENTÁRIO 3 - Ana Laura González -->
+                <!-- Para trocar a foto: substitua o src="img/avatar3.jpg" pelo caminho da sua imagem -->
+                <!-- ============================================== -->
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <!-- Substitua "img/avatar3.jpg" pelo caminho da foto -->
+                        <img src="img/avatar3.jpg" alt="Ana Laura González" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-3');">
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-header">
+                            <span class="comment-name">Ana Laura González</span>
+                            <span class="comment-time">· 1 h</span>
+                        </div>
+                        <p class="comment-text">
+                            Mi esposo y yo lo estamos haciendo todas las mañanas al despertar, exactamente como lo explicó el doctor, y mira, ya he desinflamado bastante. Perdí más de 7 kilos en 10 días haciéndolo y mi esposo perdió 8. Creo que por ser hombre adelgaza más rápido, ¡pero esto realmente es increíble!
+                        </p>
+                        <div class="comment-actions">
+                            <span>Me Gusta</span>
+                            <span>Comentar</span>
+                            <span>Compartir</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================== -->
+                <!-- COMENTÁRIO 4 - Guadalupe Hernández (COM RESPOSTAS) -->
+                <!-- Para trocar a foto: substitua o src="img/avatar4.jpg" pelo caminho da sua imagem -->
+                <!-- ============================================== -->
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <!-- Substitua "img/avatar4.jpg" pelo caminho da foto -->
+                        <img src="img/avatar4.jpg" alt="Guadalupe Hernández" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-4');">
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-header">
+                            <span class="comment-name">Guadalupe Hernández</span>
+                            <span class="comment-time">· 3 h</span>
+                        </div>
+                        <p class="comment-text">
+                            Jesucristo... el mes antepasado gasté una fortuna en una pluma de Mounjaro, y tuve prácticamente los mismos resultados con este truco. Nunca más voy a comprar una pluma de Mounjaro, voy a vivir haciendo este truco. En serio, dio exactamente el mismo resultado, solo que sin efectos secundarios.
+                        </p>
+                        <div class="comment-actions">
+                            <span>Me Gusta</span>
+                            <span>Comentar</span>
+                            <span>Compartir</span>
+                        </div>
+
+                        <!-- ============================================== -->
+                        <!-- RESPOSTAS AO COMENTÁRIO 4 -->
+                        <!-- ============================================== -->
+                        <div class="comment-replies">
+                            
+                            <!-- Resposta 1 - María del Carmen Rodríguez -->
+                            <!-- Para trocar a foto: substitua o src="img/avatar5.jpg" -->
+                            <div class="reply">
+                                <div class="comment-avatar">
+                                    <img src="img/avatar8.jpg" alt="María del Carmen Rodríguez" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-5');">
+                                </div>
+                                <div class="comment-body">
+                                    <div class="comment-header">
+                                        <span class="comment-name">María del Carmen Rodríguez</span>
+                                        <span class="comment-time">· 3 h</span>
+                                    </div>
+                                    <p class="comment-text">
+                                        ¿En serio? Estaba pensando en comprar unas plumas de Mounjaro, ¿será que mejor lo dejo y pruebo este truco primero? ¿Qué me recomiendas?
+                                    </p>
+                                    <div class="comment-actions">
+                                        <span>Me Gusta</span>
+                                        <span>Comentar</span>
+                                        <span>Compartir</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Resposta 2 - Guadalupe Hernández -->
+                            <!-- Para trocar a foto: substitua o src="img/avatar4.jpg" -->
+                            <div class="reply">
+                                <div class="comment-avatar">
+                                    <img src="img/avatar4.jpg" alt="Guadalupe Hernández" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-4');">
+                                </div>
+                                <div class="comment-body">
+                                    <div class="comment-header">
+                                        <span class="comment-name">Guadalupe Hernández</span>
+                                        <span class="comment-time">· 1 h</span>
+                                    </div>
+                                    <p class="comment-text">
+                                        No las compres, mujer, no vale la pena. Es mucho mejor que hagas este truco, te dará el mismo resultado y es infinitamente más barato de hacer, en serio.
+                                    </p>
+                                    <div class="comment-actions">
+                                        <span>Me Gusta</span>
+                                        <span>Comentar</span>
+                                        <span>Compartir</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Resposta 3 - María del Carmen Rodríguez -->
+                            <!-- Para trocar a foto: substitua o src="img/avatar5.jpg" -->
+                            <div class="reply">
+                                <div class="comment-avatar">
+                                    <img src="img/avatar8.jpg" alt="María del Carmen Rodríguez" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-5');">
+                                </div>
+                                <div class="comment-body">
+                                    <div class="comment-header">
+                                        <span class="comment-name">María del Carmen Rodríguez</span>
+                                        <span class="comment-time">· 45 min</span>
+                                    </div>
+                                    <p class="comment-text">
+                                        Ay, qué bueno saberlo, porque ya estaba por endeudarme para comprar esas plumas. ¡Gracias ❤️!
+                                    </p>
+                                    <div class="comment-actions">
+                                        <span>Me Gusta</span>
+                                        <span>Comentar</span>
+                                        <span>Compartir</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- FIM DAS RESPOSTAS -->
+
+                    </div>
+                </div>
+
+                <!-- ============================================== -->
+                <!-- COMENTÁRIO 5 - Claudia Jiménez -->
+                <!-- Para trocar a foto: substitua o src="img/avatar6.jpg" pelo caminho da sua imagem -->
+                <!-- ============================================== -->
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <!-- Substitua "img/avatar6.jpg" pelo caminho da foto -->
+                        <img src="img/avatar5.jpg" alt="Claudia Jiménez" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-6');">
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-header">
+                            <span class="comment-name">Claudia Jiménez</span>
+                            <span class="comment-time">· 2 h</span>
+                        </div>
+                        <p class="comment-text">
+                            Mi hija me mostró este video y le dije que era una tontería... ahora aquí estoy, haciendo el truco y teniendo que venir a felicitar porque funcionó muy bien 😅😅😅. Ya logré perder 11 kilos, ¡muchísimas gracias!
+                        </p>
+                        <div class="comment-actions">
+                            <span>Me Gusta</span>
+                            <span>Comentar</span>
+                            <span>Compartir</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================== -->
+                <!-- COMENTÁRIO 6 - Adriana Torres -->
+                <!-- Para trocar a foto: substitua o src="img/avatar7.jpg" pelo caminho da sua imagem -->
+                <!-- ============================================== -->
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <!-- Substitua "img/avatar7.jpg" pelo caminho da foto -->
+                        <img src="img/avatar6.jpg" alt="Adriana Torres" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-7');">
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-header">
+                            <span class="comment-name">Adriana Torres</span>
+                            <span class="comment-time">· 1 h</span>
+                        </div>
+                        <p class="comment-text">
+                            Hoy cumplí exactamente 30 días usándolo y logré perder 14 kilos. Esto es increíblemente bueno, y además es fácil de hacer. ¡Que Dios les bendiga por mostrarnos esto a nosotras las mujeres!
+                        </p>
+                        <div class="comment-actions">
+                            <span>Me Gusta</span>
+                            <span>Comentar</span>
+                            <span>Compartir</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================== -->
+                <!-- COMENTÁRIO 7 - Beatriz Mendoza -->
+                <!-- Para trocar a foto: substitua o src="img/avatar8.jpg" pelo caminho da sua imagem -->
+                <!-- ============================================== -->
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <!-- Substitua "img/avatar8.jpg" pelo caminho da foto -->
+                        <img src="img/avatar7.jpg" alt="Beatriz Mendoza" onerror="this.style.display='none'; this.parentElement.classList.add('avatar-8');">
+                    </div>
+                    <div class="comment-body">
+                        <div class="comment-header">
+                            <span class="comment-name">Beatriz Mendoza</span>
+                            <span class="comment-time">· 20 min</span>
+                        </div>
+                        <p class="comment-text">
+                            Wow, empecé a hacerlo anteayer y hoy ya bajé dos kilos y sin hinchazón. ¡Qué locura! El próximo mes vuelvo para contar cuántos kilos perdí en total, pero desde ya estoy impresionada...
+                        </p>
+                        <div class="comment-actions">
+                            <span>Me Gusta</span>
+                            <span>Comentar</span>
+                            <span>Compartir</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================== -->
+                <!-- ADICIONE MAIS COMENTÁRIOS AQUI SE NECESSÁRIO -->
+                <!-- Copie a estrutura de um comentário acima -->
+                <!-- ============================================== -->
+
+            </div>
+            <!-- FIM DA LISTA DE COMENTÁRIOS -->
+
+        </section>
+
+    </div>
+    <!-- FIM DO CONTAINER PRINCIPAL -->
+
+    <!-- ============================================== -->
+    <!-- MODAL REMOVIDO - Apenas Back Redirect está ativo -->
+    <!-- ============================================== -->
+
+    <!-- ============================================== -->
+    <!-- SCRIPTS JAVASCRIPT -->
+    <!-- ============================================== -->
+    <script>
+        // ============================================== 
+        // CONFIGURAÇÕES - ALTERE AQUI
+        // ============================================== 
+        
+        // URL para onde o usuário será redirecionado ao tentar SAIR ou VOLTAR
+        // ALTERE ESTA URL para a página que você deseja
+        const BACK_REDIRECT_URL = 'https://sua-pagina-de-destino.com';
+        
+        // Ativar/Desativar o back redirect (true = ativado, false = desativado)
+        const ATIVAR_BACK_REDIRECT = true;
+
+        // ============================================== 
+        // BACK REDIRECT
+        // Redireciona o usuário quando:
+        // 1. Clica no botão VOLTAR do navegador
+        // 2. Tenta fechar a aba/janela
+        // ============================================== 
+        
+        if (ATIVAR_BACK_REDIRECT) {
+            // Adiciona entrada no histórico para poder interceptar o voltar
+            history.pushState(null, null, location.href);
+            
+            // Intercepta o botão VOLTAR do navegador
+            window.addEventListener('popstate', function(event) {
+                // Redireciona para a URL definida
+                window.location.href = BACK_REDIRECT_URL;
+            });
+
+            // Intercepta tentativa de FECHAR a aba/janela
+            window.addEventListener('beforeunload', function(event) {
+                // Redireciona para a URL definida
+                window.location.href = BACK_REDIRECT_URL;
+            });
+        }
+
+        // ============================================== 
+        // UTMIFY - CAPTURA DE PARÂMETROS UTM
+        // Cole aqui funções adicionais da UTMify se necessário
+        // ============================================== 
+        // Exemplo:
+        // function captureUTM() {
+        //     // Código para capturar UTMs
+        // }
+        // captureUTM();
+
+    </script>
+
+    <!-- ============================================== -->
+    <!-- SCRIPTS EXTERNOS ADICIONAIS -->
+    <!-- Cole aqui outros scripts que precisar -->
+    <!-- ============================================== -->
+    
+    <!-- Exemplo: Script de chat/suporte -->
+    <!-- <script src="https://exemplo.com/chat.js"></script> -->
+
+    <!-- Exemplo: Script de analytics adicional -->
+    <!-- <script src="https://exemplo.com/analytics.js"></script> -->
+
+</body>
+</html>
